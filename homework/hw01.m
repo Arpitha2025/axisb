@@ -4,7 +4,7 @@ clear, close all; clc;
 A = % ADD YOUR CODE HERE
 
 % create random vector of size 10x1
-x = % ADD YOUR CODE HERE
+x = % ADD YOUR CODE HEREE
 
 % compute matrix vector product
 b = % ADD YOUR CODE HERE
