@@ -8,7 +8,7 @@ A = [10 -7  1   4  6; ...
       3 -1 10  12 12];
 
 % create augmented matrix associated to A*x = 0
-% ADD YOUR CODE HERE
+A = [A,0];
 
 % check that A*x = 0 has free variables
 fprintf('reduced echelon form of [A 0]\n');
