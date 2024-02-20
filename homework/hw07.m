@@ -9,3 +9,7 @@ A = [ 2 3  5 -5; ...
 b = [8; 7; 5; -3];
 
 % ADD YOUR CODE HERE
+x = A/b;
+if (x == b){
+     disp(x);
+}
