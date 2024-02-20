@@ -9,18 +9,18 @@ clear, close all;
 A = zeros(5,4);
 
 % create identity matrix to generate the vectors e_i
-I = % ADD YOUR CODE HERE
+I = eye(5);
 
 for i = 1 : 4 % loop over i to consider all vectors e_i
     % obtain vector e_i as i-th column of I
-    e = % ADD YOUR CODE HERE
+    e = I(:, i);
 
     % find the transformation T(e_i) of e_i
-    Te = % ADD YOUR CODE HERE
+    Te = T * e;
 
     % T(e_i) is the i-th column of A
-    % ADD YOUR CODE HERE
+    Te = A(:,i);
 end
 
 % print standard matrix A on screen
-A
+disp(A);
