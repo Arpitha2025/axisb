@@ -6,14 +6,21 @@ fprintf('---------------------------------------\n');
 % for loop to repeat the first test 3 times
 for k = 1:3
     % 5x5 matrix with random entries
-    A =  % ADD YOUR CODE HERE
+    A =  rand(5,5);
 
     % check if (A + I_5)*(A - I_5) - (A^2 - I_5)
     % gives the zero matrix
     % ADD YOUR CODE HERE
+    check = false;
+    I_5 = diag(1 1 1 1 1);
+    final = (A + I_5)*(A - I_5) - (A^2 - I_5)
+    if final == 0
+        check = true;
+        
 end
 
 % ADD A COMMENT WITH YOUR OBSERVATIONS BELOW
+%perform the calculation and use an if statement to check if the final result is 0
 
 
 
