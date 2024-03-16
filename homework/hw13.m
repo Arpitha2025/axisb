@@ -1,10 +1,10 @@
 clear, close all; clc;
 
 % define a hilbert matrix of order 5
-H = % ADD YOUR CODE HERE;
+H = hilb(5);
 
 % define a suitable b
-b = % ADD YOUR CODE HERE
+b = ones(5);
 x = H\b;
 
 fprintf('last column of Hilbert matrix:\n');
