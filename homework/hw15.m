@@ -11,13 +11,13 @@ for k = 1:n
     A = hilb(k);        % compute H of order k
 
     % remember id (for plotting)
-    id(k)    = % ADD YOUR CODE HERE
+    id(k)    = k;
 
     % store determinant (for plotting)
-    dA(k)  = % ADD YOUR CODE HERE
+    dA(k)  = det(A);
 
     % store condition number (for plotting)
-    cA(k) = % ADD YOUR CODE HERE
+    cA(k) = cond(A);
 
     % display the hilbert matrix
     fprintf('hilbert matrix of order k=%i\n', k);
@@ -26,3 +26,4 @@ end
 
 
 % ADD CODE TO PLOT YOUR RESULTS BELOW
+plot(id(k), dA(k));
