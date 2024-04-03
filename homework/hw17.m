@@ -8,5 +8,9 @@ v2 = [  2;  3;  2;  6];
 v3 = [ -1;  4;  6; -2];
 
 % ADD YOUR CODE HERE
-
+H = {u1,u2,u3}
+K = {v1,v2,v3}
+basisH = orth(H)
+basisK = orth(K)
+basisHK = orth(H+K)
 % ADD A COMMENT WITH YOUR OBSERVATIONS BELOW
