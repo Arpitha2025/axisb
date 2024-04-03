@@ -10,7 +10,10 @@ A = [ -8,  5, -2,  0; ...
 w = [1; 2; 1; 0];
 
 % ADD YOUR CODE HERE
-
-
+if (col(A) == w)
+      disp("in column space");
+if (null(A) == w)
+      disp("in null space");
+      
 
 % ADD A COMMENT WITH YOUR OBSERVATIONS BELOW
