@@ -10,10 +10,10 @@ v2 = [ 9; 4; 1; 6;-7];
 v3 = [ 6; 7;-8; 5;-7];
 
 % construct identity matrix
-I = % YOUR CODE GOES HERE
+I = eye(n);
 
 % construct matrix A
-A = % YOUR CODE GOES HERE
+A = [v1 v2 v3]
 
 
 % observations:
@@ -22,4 +22,5 @@ A = % YOUR CODE GOES HERE
 
 % part b)
 % explanation:
+%all those vectors span the column space for A. col A spans the n columns in an mxn matrix.
 % YOUR EXPLANATION GOES HERE
