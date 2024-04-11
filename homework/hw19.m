@@ -11,7 +11,7 @@ v2 = [30;  7; 30;-16];
 
 
 % compute rank of matrix A
-r = % ADD YOUR CODE HERE
+r = rank(A);
 fprintf('rank(A)      = %d\n', r);
 
 
@@ -23,6 +23,15 @@ fprintf('rank(A)      = %d\n', r);
 % are in the column space of A
 
  % ADD YOUR CODE HERE
+ Av1 = [A v1];
+ Av2 = [A v2];
+ Av1Rank = rank(Av1);
+ Av2Rank = rank(Av2);
+ if (Av1 == r)
+       fprintf("v1 is in the column space of A");
+if (Av2 == r)
+       fprintf("v2 is in the column space of A");
+      
 
 
 % ADD A COMMENT WITH YOUR OBSERVATIONS BELOW
