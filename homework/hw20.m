@@ -6,11 +6,11 @@ A = [ 4  0  1; ...
      -2  0  1];
 
 % compute eigenvalues of the matrix A
-lambda = % ADD YOUR CODE HERE
+lambda = eig(A);
 
 % compute the eigenvectors of the matrix A
 % using the 'null' command
 for i = 1 : numel(lambda)
-    v = % ADD YOUR CODE HERE
+    v = null(A);
     disp(v);
 end
