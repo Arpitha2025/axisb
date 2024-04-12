@@ -19,16 +19,18 @@ figure();
 for i = 1 : numel(alpha)
     % modify matrix A
     % ADD YOUR CODE HERE
+    A = alpha(i);
 
     % compute and display eigenvalues of A
-    % ADD YOUR CODE HERE
+    disp(eig(A));
+
 
     % create vector to store values for
     % polynomial (determinant)
     p = zeros(numel(t),1);
     % compute determinant and assign value
     for j = 1 : numel(t)
-        p(j) = % ADD YOUR CODE HERE
+        p(j) = det(A);
     end
 
     % create plot; the hold command enables
